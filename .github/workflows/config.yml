@@ -6,6 +6,8 @@ jobs:
   ui-tests:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+
       - name: Set up Docker Compose
         run: ls -la /usr/workspace
       - name: Run UI-tests via docker-compose
